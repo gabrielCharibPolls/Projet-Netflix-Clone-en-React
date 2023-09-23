@@ -1,8 +1,6 @@
 # Projet Netflix Clone en React
 
 
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
-
 
 
 Ce projet est un clone de la page d'accueil de Netflix construit en utilisant React. Il a été créé pour démontrer mes compétences en développement de logiciels et ma capacité à travailler avec React.

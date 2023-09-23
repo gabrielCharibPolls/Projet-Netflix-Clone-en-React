@@ -2,17 +2,29 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import PopularNetflix from './PopularNetflix';
 
+//rajouter tout la liste des films 
+
 
 function FilmList() {
-  const [films, setFilms] = useState([]);
+  const films = [
+    {
+      id: 1,
+      imageURL: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o5.PNG?raw=true",
+      title: "Film 1",
+    },
+    {
+      id: 2,
+      imageURL: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o6.PNG?raw=true",
+      title: "Film 2",
+    },
+    {
+      id: 3,
+      imageURL: "https://github.com/carlosavilae/Netflix-Clone/blob/master/img/o1.PNG?raw=true",
+      title: "Film 2",
+    },
+    
+  ];
 
-  useEffect(() => {
-    async function fetchFilms() {
-      const response = await axios.get("https://api.themoviedb.org/3/movie/top_rated?api_key=b53b578e9859b87ecd3589202df57ca2&language=en-US&page=1");
-      setFilms(response.data.results);
-    }
-    fetchFilms();
-  }, []);
 
   return (
     <PopularNetflix films={films} />
